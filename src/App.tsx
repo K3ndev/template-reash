@@ -1,41 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { Button } from "./components/ui/button";
-import { GenericPanel, Layout } from "./components/custom/index";
-import { useAos } from "./hooks/index";
+import { Suspense } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useAos } from "./shared/hooks/index";
+import Home from "./pages/index";
+import NoPage from "./modules/404";
+
 function App() {
   useAos();
-  const [count, setCount] = useState(0);
 
   return (
-    <Layout>
-      <GenericPanel>
-        <div data-aos="fade-up" className="flex justify-center gap-10 mb-20">
-          <div className="flex">
-            <a href="https://vitejs.dev" target="_blank">
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank">
-              <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
-          </div>
-          <h1 className="text-3xl font-bold underline">Vite + React</h1>
-        </div>
-        <div className="text-center">
-          <Button
-            onClick={() => setCount((count) => count + 1)}
-            className="bg-red-400 "
-          >
-            count is {count}
-          </Button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-          <p>Click on the Vite and React logos to learn more</p>
-        </div>
-      </GenericPanel>
-    </Layout>
+    <BrowserRouter>
+      {/* you can make it null */}
+      <Suspense fallback={<p>Loading...</p>}>
+        <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 

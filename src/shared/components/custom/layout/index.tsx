@@ -1,8 +1,7 @@
-import React from "react";
 import { LayoutProps } from "./type";
-import { Footer, Header } from "../../custom/index";
+import { Footer, Header } from "./component/index";
 
-export function Layout(props: LayoutProps) {
+export const Layout = (props: LayoutProps) => {
   return (
     <>
       <Header />
@@ -10,4 +9,4 @@ export function Layout(props: LayoutProps) {
       <Footer />
     </>
   );
-}
+};
