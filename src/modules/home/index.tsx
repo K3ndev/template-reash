@@ -3,9 +3,10 @@ import reactLogo from "../../../public/react.svg";
 import viteLogo from "../../../public/vite.svg";
 import { Button } from "../../shared/components/ui/button";
 import { GenericPanel, Layout } from "../../shared/components/custom/index";
-const App: React.FC = () => {
+const Home: React.FC = () => {
   const [count, setCount] = useState(0);
 
+  console.log('Home page rendered')
   return (
     <Layout>
       <GenericPanel>
@@ -37,4 +38,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default Home;
