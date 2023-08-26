@@ -74,3 +74,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Layout template you can use */
+/* It will split the header, main, and footer similar to a hamburger menu */
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 0%;
+}
+
+/* css debugger */
+* {
+  box-sizing: border-box;
+  outline: 1px solid limegreen !important
+}
