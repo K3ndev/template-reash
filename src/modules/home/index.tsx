@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import reactLogo from "../../../public/react.svg";
 import viteLogo from "../../../public/vite.svg";
 import { Button } from "../../shared/components/ui/button";
@@ -6,7 +6,11 @@ import { GenericPanel, Layout } from "../../shared/components/custom/index";
 const Home: React.FC = () => {
   const [count, setCount] = useState(0);
 
-  console.log('Home page rendered')
+  // comments helper
+  console.log("Home page rendered");
+  useEffect(() => {
+    console.log("Home page hydrated");
+  }, []);
   return (
     <Layout>
       <GenericPanel>
@@ -36,6 +40,6 @@ const Home: React.FC = () => {
       </GenericPanel>
     </Layout>
   );
-}
+};
 
 export default Home;

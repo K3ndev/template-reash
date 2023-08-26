@@ -7,6 +7,7 @@ import NoPage from "./pages/404";
 function App() {
   useAos();
 
+  // comments helper
   console.log('app rendered')
   return (
     <BrowserRouter>
