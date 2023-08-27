@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import reactLogo from "../../../public/react.svg";
-import viteLogo from "../../../public/vite.svg";
+import reactLogo from "/react.svg";
+import viteLogo from "/vite.svg";
 import { Button } from "../../shared/components/ui/button";
 import { GenericPanel, Layout } from "../../shared/components/custom/index";
 const Home: React.FC = () => {
