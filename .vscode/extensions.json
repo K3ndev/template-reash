@@ -2,7 +2,8 @@
     "recommendations": [
       "dsznajder.es7-react-js-snippets",
       "yoavbls.pretty-ts-errors",
-      "esbenp.prettier-vscode",
+      // "esbenp.prettier-vscode",
+      "rome.rome",
       "bradlc.vscode-tailwindcss"
     ],
     "unwantedRecommendations": []
