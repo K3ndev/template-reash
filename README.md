@@ -43,7 +43,7 @@ This template is designed to help you kickstart your React projects with the fol
 1. Click "Use this template" above
 2. Then create a new repository.
 
-Open [http://localhost:5173](http://localhost:3000/) with your browser to see the result. You can start editing the page by modifying `modules/home/index.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:5173](http://localhost:5173/) with your browser to see the result. You can start editing the page by modifying `modules/home/index.tsx`. The page auto-updates as you edit the file.
 
 ### Addional Notes
 
