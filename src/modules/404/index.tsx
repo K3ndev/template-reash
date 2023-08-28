@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { GenericPanel, Layout } from "../../shared/components/custom/index";
+import { GenericPanel, Layout } from "@/shared/components/custom/index";
 
 const NoPage: React.FC = () => {
 

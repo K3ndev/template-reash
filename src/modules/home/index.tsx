@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import reactLogo from "/react.svg";
 import viteLogo from "/vite.svg";
-import { Button } from "../../shared/components/ui/button";
-import { GenericPanel, Layout } from "../../shared/components/custom/index";
+import { Button } from "@/shared/components/ui/button";
+import { GenericPanel, Layout } from "@/shared/components/custom/index";
 const Home: React.FC = () => {
   const [count, setCount] = useState(0);
 
