@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import reactLogo from "/react.svg";
 import viteLogo from "/vite.svg";
 import { Button } from "@/shared/components/ui/button";
-import { GenericPanel, Layout } from "@/shared/components/custom/index";
+import { GenericPanel } from "@/shared/components/custom/index";
 const Home: React.FC = () => {
   const [count, setCount] = useState(0);
 
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     console.log("Home page hydrated");
   }, []);
   return (
-    <Layout>
+    <>
       <GenericPanel>
         <div data-aos="fade-up" className="flex justify-center gap-10 mb-20">
           <div className="flex">
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
           <p>Click on the Vite and React logos to learn more</p>
         </div>
       </GenericPanel>
-    </Layout>
+    </>
   );
 };
 
