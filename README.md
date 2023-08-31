@@ -55,4 +55,4 @@ Open [http://localhost:5173](http://localhost:5173/) with your browser to see th
 
 * Create `login.tsx` for authentication readiness.
 * Add Docker setup
-* Transition to using Rome instead of ESLint.
+* Transition to using biome instead of ESLint and Prettier.
